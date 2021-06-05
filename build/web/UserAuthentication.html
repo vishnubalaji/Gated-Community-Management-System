@@ -1,0 +1,69 @@
+<!--<html>
+    <head>
+        <title>User Authentication</title>
+    </head>
+    
+    <body>
+        <form action=UserAuth method=POST>
+            
+            <h1><b>Login page User</b></h1>
+            Username : <input type="text" name="username" required/><br>
+            Password : <input type="password" name="passwd" required/><br>
+            
+            <input type="submit" value="Submit"/><br>
+            Don't have an account? <a href='UserCreation.html'>Create one :)</a>
+            
+        </form>
+    </body>
+</html>-->
+<html>
+    <head>
+        <link rel="stylesheet" href="UserAuthentication.css">
+    </head>
+    
+    <body>
+        
+    <div class="container" id="container">
+	<div class="form-container sign-up-container">
+		<form action="UserCreat" method="POST">
+			<h1>Create Account</h1>
+
+			<input type="text" placeholder="Name" name="name" required/>
+                        <input type="text" placeholder="Username" name="username" required/>
+                        <input type="password" placeholder="Password" name="passwd" required/>
+                        <input type="password" placeholder="Re-type Password" name="passwdre" required/>
+                        <input type="number" placeholder="Contact No" name="contact" required/>
+                        <input type="email" placeholder="Email" name="email" required/>
+                        <input type="number" placeholder="House No" name="house" required/>
+                        <input type="number" placeholder="Block No" name="block" required/>
+                        
+			<button>Sign Up</button>
+		</form>
+	</div>
+	<div class="form-container sign-in-container">
+            <form action="UserAuth" method="POST">
+			<h1 class="signin">Sign in</h1>
+			<input type="text" name="username" placeholder="Username" required/>
+			<input type="password" name="passwd" placeholder="Password" required/>
+			<a href="#">Forgot your password?</a>
+			<button>Sign In</button>
+		</form>
+	</div>
+	<div class="overlay-container">
+		<div class="overlay">
+			<div class="overlay-panel overlay-left">
+				<h1>Welcome Back!</h1>
+				<p>Already have an account? Login here</p>
+				<button class="ghost" id="signIn">Sign In</button>
+			</div>
+			<div class="overlay-panel overlay-right">
+				<h1>Don't have an account?</h1>
+				<p>Create an account here and start your journey with us</p>
+				<button class="ghost" id="signUp">Sign Up</button>
+			</div>
+		</div>
+	</div>
+</div>
+        <script src="UserAuthentication.js"></script>
+    </body>
+</html>

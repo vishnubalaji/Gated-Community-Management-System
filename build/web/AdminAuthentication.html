@@ -1,0 +1,43 @@
+<!--<html>
+    <head>
+        <title>Administrator Authentication</title>
+    </head>
+    
+    <body>
+        <form action=AdminAuth method=POST>
+            
+            <h1><b>Login page</b></h1>
+            Username : <input type="text" name="adminuser"/><br>
+            Password : <input type="password" name="adminpasswd"/><br>
+            <input type="submit" value="Submit"/><br>
+            
+        </form>
+    </body>
+</html>-->
+
+<html>
+    <head>
+        <link rel="stylesheet" href='AdminAuthentication.css'>
+    </head>
+    
+    <body>
+        
+<div class="container" id="container">
+	<div class="sign-in-container">
+		<form action="AdminAuth" method="POST">
+			<h1 class="signin">Sign in</h1>
+			<input type="text" name="adminuser" placeholder="Username" required/>
+			<input type="password" name="adminpasswd" placeholder="Password" required/>
+			<a href="#">Forgot your password?</a>
+			<button>Sign In</button>
+		</form>
+	</div>
+	<div class="overlay-container">
+		<div class="overlay-panel">
+			<h1>Welcome Back!</h1>
+		</div>
+	</div>
+</div>
+<!--        <script src="UserAuthentication.js"></script>-->
+    </body>
+</html>

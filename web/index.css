@@ -1,0 +1,85 @@
+.logo {
+    position : absolute;
+    width : 500px ;
+    height: 500px ;
+    top: 15%;
+    left: 10%;
+}
+
+.button {
+  display : inline-block;
+  box-sizing: border-box;
+  background-color: transparent;
+  border-radius: 0.6em;
+  cursor: pointer;
+  align-self: center;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1;
+  padding: 10px 20px;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Odibee Sans', cursive;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+}
+
+.user {
+  top:30%;
+  position : absolute;
+  border: 2px solid yellow;
+  color: #fff;
+  left : 15%;
+  }
+
+.admin {
+  top:60%;
+  position : absolute;
+  border: 2px solid yellow;
+  color: #fff;
+  left : 14.7%;
+  }
+
+.OR {
+  position : absolute;
+  color : yellow;
+  top:45%;
+  left : 17%;
+}
+
+
+/* .OR {
+  position : absolute;
+  color : yellow;
+  top:30%;
+  left : 15%;
+} */
+
+.parent {
+  position : absolute;
+  background-color : white;
+  top : 0;
+  left : 0;
+  right : 0;
+  bottom : 0;
+  overflow:hidden;
+}
+
+.child-color {
+    position: absolute;
+    z-index : 0;
+    width: 100%;
+    height: 100%;
+    top : 0;
+    left : 60%;
+    right : 0;
+    bottom : 0;
+    /*background-color: #ff4500;*/
+    background: #FF416C;
+    background: -webkit-linear-gradient(to left, #FF4B2B, #FF416C);
+    background: linear-gradient(to left, #FF4B2B, #FF416C);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 0;
+}

@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title>Home page of Administrator</title>
+        <link rel="stylesheet" href='AdminHome.css'>
+    </head>
+    
+    <body>
+        
+        <div class="div-1">
+            <form action="AdminOperations" method="POST">
+                <input type="text" class="usrname" name="username" placeholder="Username" required><br>
+
+                <button name="Submit" class="btn-ud" value="userDetails">User Details</button>&nbsp;
+                <button name="Submit" class="btn-th" value="transactionHistory">Transaction History</button>
+                <button name="Submit" class="btn-fs" value="feeStatus">Maintenance fee status</button>
+<!--                 <button name="Submit" class="btn-rp" value="resetPassword">Reset Password</button> -->
+            </form>
+        </div>
+        
+        <div class="div-2">
+            <form action="AdminOperations" method="POST">
+                <button name="Submit" class="btn-au" value="allUser">All User</button>
+            </form>
+            <a href="index.html" class="btn-lg">Logout</a>
+        </div>
+        
+      <div class="div-3">
+            <form action="mailServer" method="POST">
+                <input type="text" class="email" name="EmailID" placeholder="Email-ID" required><br>
+
+                <button name="Submit" class="btn-rp" value="resetPasswd">Reset Password</button>&nbsp;
+            </form>
+      </div>
+        
+        <div class="div-4">
+            <form action="AdminOperations" method="POST">
+                
+                <select class="months-list" name="months">
+                    <option value="January">January</option>
+                    <option value="February">February</option>
+                    <option value="March">March</option>
+                    <option value="April">April</option>
+                    <option value="May">May</option>
+                    <option value="June">June</option>
+                    <option value="July">July</option>
+                    <option value="August">August</option>
+                    <option value="September">September</option>
+                    <option value="October">October</option>
+                    <option value="November">November</option>
+                    <option value="December">December</option>
+                </select>
+                
+                <button name="Submit" class="btn-ur" value="Unpaid">Unpaid residents</button>
+            </form>
+        </div>
+      
+    </body>
+</html>
